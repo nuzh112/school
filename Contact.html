@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		label{
+			font-weight: bolder;
+			font-size: 18px;
+		}
+
+		span{
+			font-style: italic;
+			color: red;
+			font-size: 16px;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/LOGO.jpg" class="img-fluid mx-auto" height="120px" width="160px">
+                </div>
+                   
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item "><a class="nav-link"  href="index.html" style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="AboutUs.html" style="width: 120px; text-align: center;">ABOUT US</a></li>
+					<li class="nav-item"  ><a class="nav-link"  href="Academics.html" style="width: 130px; text-align: center;">ACADEMICS</a></li>
+					<li class="nav-item"><a class="nav-link"  href="Admission.html" style="width: 130px; text-align: center;">ADMISSION</a></li>
+					<li class="nav-item"><a class="nav-link"  href="campus.html" style="width: 110px; text-align: center;">CAMPUS</a></li>
+					<li class="nav-item active" style="border-bottom: 3px solid #1a75ff; font-size: 17px;"><a class="nav-link"  href="Contact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav><br><br.<br>
+	<section>
+	
+		<div class="container">
+			<div class="contact" style="border:3px solid  #1a75ff ; border-radius: 20px;">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<h3 style="text-align: center; padding-top: 15px; ">Register here <br>Please Fill out the below details</h3><br>
+					</div><br><br>
+
+					<div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8 mx-auto">
+						<form class="form-inline"  name="form1" class="frm_message" method="post" autocomplete="off" onsubmit="return Reg()" style="padding-bottom: 20px;">
+							<div class="form-group">
+						      	<label for="Sname">Student Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Sname" placeholder="Enter Student Name" name="Sname" required=""><span id="Snamemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="Pname">Parent Name: &nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="Pname" placeholder="Enter Parent Name" name="Pname" required=""><span id="Pnamemsg" required=""></span>
+						    </div><br><br><br><br>
+
+						    <div class="form-group">
+						     	<label for="Cnumber">Contact No: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="number" class="form-control" id="Cnumber" placeholder="Enter Contact No" name="Cnumber" required=""> <span id="mobilemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="email">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required=""> <span id="emailmsg"></span>
+						    </div><br>
+
+						    <div class="form-group">
+						      	<label for="age">Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" required=""> <span id="agemsg"></span>
+						    </div>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+						      	<label for="grade">Grade:&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+						      	<input type="text" class="form-control" id="grade" placeholder="Enter Grade" name="grade" required=""> <span id="grademsg"></span>
+						    </div><br><br><br><br>
+
+						    <div class="form-group">
+						      	<label for="Pschool">Previous School: &nbsp;&nbsp;</label>
+						      	<input type="number" class="form-control" id="Pschool" placeholder="Enter Previous School name" name="Pschool" required=""> <span id="Pschoolmsg"></span>
+						    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						    <div class="form-group">
+								<label for="address">Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<textarea class="form-control" id="add" placeholder="Enter full Address" name="address" required=""> </textarea><span id="addmsg"></span>
+						  </div><br><br><br><br>
+
+						    <div class="form-check">
+						    	<label>Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+							  	<label style="font-weight: normal; font-size: 17px;" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender">Male
+							  	</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						
+							  	<label style="font-weight: normal; font-size: 17px;" class="form-check-label">
+							    <input type="radio" class="form-check-input" name="gender">Female
+							  	</label><span id="gendermsg"></span>
+							</div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<br><br><br>
+							
+						    
+						<div>
+						    <input style="font-size: 18px; width: 120px; background:#1a75ff ; border:1px solid #1a75ff;"  type="submit" name="" value="SUBMIT" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			
+						    <input style="font-size: 18px; width: 120px;" type="Reset" name="" value="RESET" class="btn btn-danger">
+						</div>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<br><br>
+
+		<div class="container" >
+			<div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+
+				<div>
+					<h1 style="color:#1a75ff; font-weight: bolder;">Nuzha international School</h1>
+
+				</div><br>
+				<div style="color:#1a75ff">
+					<h5><i class="fa-solid fa-location-dot fa-beat" style="color:#1a75ff;"></i>  Nuzha International School</h5>
+					<h5>Nerul east 400-721</h5>
+				</div><br>
+				<div style="color:#1a75ff">
+					<h5><i class="fa-solid fa-mobile-screen fa-beat" style="color:#1a75ff;"></i>  +91 022 23456787 , 022 12543256</h5>
+					<h5>(for Admissions only)</h5>
+				</div><br>
+
+				<div style="color:#1a75ff">
+					<h5><i class="fa-regular fa-envelope fa-beat" style="color:#1a75ff;" ></i>  info@nis.ac.in</h5>	
+				</div>
+			</div>
+
+		</div>
+	</section><br> 
+
+	<footer class="bg-dark">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h4>@ Nuzha International School. All Copy Rights Reserved. </h4>
+            </div>
+        </div>
+    </footer>
+							
+						   
+
+						    
+
+</body>
+</html>

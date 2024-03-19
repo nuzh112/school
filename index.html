@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+   <style>
+        .carousel-inner img {
+     		width: 100%;
+      		height: 460px;
+ 		}
+		 #zoom:hover{
+ 			-webkit-transform: scaleX(-1);
+  			transform: scaleX(-1);
+ 		}	
+
+ 		#link:hover{
+ 			font-size: 25px;
+ 		}
+    </style>
+</head>
+<body>
+    
+    <header>
+		<div class="container">
+			<div class="row">
+				<div class="col-5 col-sm-5 col-md-6 col-lg-6 col-xl-6">
+					<img src="img/LOGO.jpg" class="img-fluid mx-auto" height="120px" width="160px">
+                </div>
+                   
+				<div class="col-7 col-sm-7 col-md-6 col-lg-6 col-xl-6">
+					<form class="form-inline" style="margin-top: 35px; margin-left: 60px;">
+						<div class="input-group">
+							<input class="form-control mr-sm-2" type="text" placeholder="Search....">
+							<button class="btn btn-primary" type="submit">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+		<div class="container-fluid">
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	    		<span class="navbar-toggler-icon"></span>
+	  		</button>
+	  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active" style="border-bottom: 3px solid #1a75ff; font-size: 17px;"><a class="nav-link"  href="Home.html" style="width: 110px; text-align: center;">HOME</a></li>
+					<li class="nav-item"><a class="nav-link"  href="AboutUs.html" style="width: 120px; text-align: center;">ABOUT US</a></li>
+					<li class="nav-item"><a class="nav-link"  href="Academics.html" style="width: 130px; text-align: center;">ACADEMICS</a></li>
+					<li class="nav-item"><a class="nav-link"  href="Admission.html" style="width: 130px; text-align: center;">ADMISSION</a></li>
+					<li class="nav-item"><a class="nav-link"  href="campus.html" style="width: 110px; text-align: center;">CAMPUS</a></li>
+					<li class="nav-item"><a class="nav-link"  href="Contact.html" style="width: 110px; text-align: center;">CONTACT</a></li>
+				</ul>
+			</div>	
+		</div>
+	</nav>
+	<section>
+		<div class="container">
+			<div id="carouselExampleCaptions" class="carousel slide">
+				<!-- indicator -->
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label=""></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label=""></button>
+				  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label=""></button>
+				</div>
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="img/kids2.jpg" class="d-block w-100" alt="kids1">
+					<div class="carousel-caption d-none d-md-block">
+					  <h5>Welcome to</h5>
+					  <h2 class="text-primary">The Nuzha International School</h2>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/kids1.jpg" class="d-block w-100" alt="kids2">
+					<div class="carousel-caption d-none d-md-block">
+					  
+					  <h1>We believe in learning together</h1>
+					</div>
+				  </div>
+				  <div class="carousel-item">
+					<img src="img/kids3.jpg" class="d-block w-100" alt="kids3">
+					<div class="carousel-caption d-none d-md-block">
+
+					  <h1>Education is the key to success</h1>
+					</div>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+
+		</div><br><br><br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<h1 style="text-align: center;">- About -</h1>
+				</div><br>
+
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<p style="font-size: 20px; line-height: 28px; text-align: justify;">
+						Nuzha International School is one of the best international schools in Mumbai where your child’s learnings ascend beyond the universe and the bounds of imagination are limitless, allowing each child to explore ever-expanding horizons.<br><br>
+
+						As one of the top rated schools in Mumbai Maharashtra, we encourage free spirit in every curious mind to imbibe, absorb, contribute and create new ideas and build an innovative thought process right from nursery school.
+						The Nuzha International School (TNIS) was established with a vision of providing an international and holistic education that meets the needs
+						of Childrens.<br><br>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab doloremque omnis culpa maiores totam perspiciatis accusantium, architecto similique sit eveniet, amet quos! Obcaecati dolorem quibusdam corrupti cum quam veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste asperiores provident nam facere officia, odit quas, expedita ex mollitia a voluptate quae repellat accusamus, ullam laudantium soluta. Corporis assumenda vero dolores placeat atque quaerat ex unde incidunt quod, aliquam ad sit odit provident laudantium culpa explicabo, veritatis ipsum enim.
+
+					</p>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="container">
+			<br><hr><br>
+
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="Academics.html" style="color:  #1a75ff ;"><img id="zoom" src="img/kids4.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color:  #1a75ff;">Academics session</h4></a>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="Academics.html#beyondacademics" style="color:  #1a75ff;"><img id="zoom" src="img/kids5.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color:  #1a75ff;">Beyond Academics</h4></a>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="Admission.html" style="color:   #1a75ff;"><img id="zoom" src="img/kids6.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color:   #1a75ff;">Admission Process</h4></a>
+				</div>
+			</div><br><br><br>
+
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="campus.html" style="color:  #1a75ff;"><img id="zoom" src="img/campus.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color:   #1a75ff;">NIS Campus</h4></a>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="campus.html#gallery" style="color:   #1a75ff;"><img id="zoom" src="img/kids7.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color:  #1a75ff;">Gallery</h4></a>
+				</div>
+
+				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+					<a href="Contact.html" style="color:  #1a75ff;"><img id="zoom" src="img/kids9.jpg" class="img-thumbnail img-fluid mx-auto d-block">
+					<h4 id="link" style="text-align: center; color: #1a75ff;">Register Here</h4></a>
+				</div>
+			</div>
+		</div> <hr>	<br>
+
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4 style="text-align: justify;"><b>“The more that you read, the more things you will know, the more that you learn, the more places you’ll go.”</b></h4>
+				<h5 align="right">—Dr. Seuss</h5>
+			</div>
+		</div>
+	</section><br><br>
+	<footer class="bg-dark">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<h4>@ Nuzha International School. All Copy Rights Reserved. </h4>
+			</div>
+		</div>
+	</footer>
+
+	
+   
+    
+</body>
+</html>
